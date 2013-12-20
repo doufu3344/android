@@ -1,7 +1,4 @@
-This is a fork of Andromadus' Android repo, with my own stuff added.
-
-The following part is the readme as supplied by Flinny, modified for my own repo.
-
+This is CM11.0 for Saga, unofficial build
 
 Getting Started
 ---------------
@@ -11,7 +8,7 @@ familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
 To initialize your local repository using this tree, use a command like this:
 
-    repo init -u git://github.com/jdeluyck/android.git -b cm10.2
+    repo init -u git://github.com/jdeluyck/android.git -b cm-11.0
 
 Then to sync up:
 
