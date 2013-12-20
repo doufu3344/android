@@ -12,6 +12,9 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
+  <remote  name="gitorious"
+	   fetch="https://git.gitorious.org" />
+
   <default revision="refs/heads/cm-11.0"
            remote="github"
            sync-c="true"
@@ -465,7 +468,8 @@
 
 
 
-  <project path="device/htc/saga" name="jdeluyck/android_device_htc_saga" remote="github" revision="cm-11.0" />
+<!--  <project path="device/htc/saga" name="jdeluyck/android_device_htc_saga" remote="github" revision="cm-11.0" /> -->
+  <project path="device/htc/saga" name="cm102/device_saga" remote="gitorious" revision="cm11" />
 
   <project path="vendor/htc/saga" name="jdeluyck/proprietary_htc_saga" remote="github" revision="cm-11.0" />
   <project path="device/htc/msm7x30-common" name="jdeluyck/android_device_htc_msm7x30-common" remote="github" revision="cm-11.0" />
@@ -477,6 +481,7 @@
   <project path="hardware/qcom/display-legacy" name="Andromadus/android_hardware_qcom_display" remote="github" revision="cm-11.0" />
   <project path="hardware/qcom/media-legacy" name="Andromadus/android_hardware_qcom_media" remote="github" revision="cm-11.0" />
 
-  <project path="kernel/htc/msm7x30-3.0" name="jdeluyck/htc7x30-3.0" remote="github" revision="andromadus_4.3" />
+<!--  <project path="kernel/htc/msm7x30-3.0" name="jdeluyck/htc7x30-3.0" remote="github" revision="andromadus_4.4" /> -->
+  <project path="kernel/htc/msm7x30-3.0" name="kylon/htc7x30-3.0" remote="github" revision="andromadus_4.4" />
 
 </manifest>
