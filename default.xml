@@ -12,15 +12,12 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
-  <remote  name="gitorious"
-	   fetch="https://git.gitorious.org" />
-
   <default revision="refs/heads/cm-11.0"
            remote="github"
            sync-c="true"
-           sync-j="8" />
+           sync-j="4" />
 
-  <project path="build" name="CyanogenMod/android_build" revision="cm-11.0" >
+  <project path="build" name="CyanogenMod/android_build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -230,7 +227,6 @@
   <project path="external/protobuf" name="CyanogenMod/android_external_protobuf" groups="pdk" />
   <project path="external/qemu" name="CyanogenMod/android_external_qemu" />
   <project path="external/qemu-pc-bios" name="CyanogenMod/android_external_qemu-pc-bios" />
-  <project path="external/qrngd" name="CyanogenMod/android_external_qrngd" />
   <project path="external/regex-re2" name="CyanogenMod/android_external_regex-re2" />
   <project path="external/replicaisland" name="CyanogenMod/android_external_replicaisland" />
   <project path="external/robolectric" name="platform/external/robolectric" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
@@ -281,6 +277,7 @@
   <project path="frameworks/ex" name="CyanogenMod/android_frameworks_ex" />
   <project path="frameworks/mff" name="CyanogenMod/android_frameworks_mff" />
   <project path="frameworks/ml" name="CyanogenMod/android_frameworks_ml" />
+  <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" groups="pdk" />
   <project path="frameworks/opt/calendar" name="CyanogenMod/android_frameworks_opt_calendar" />
   <project path="frameworks/opt/carddav" name="CyanogenMod/android_frameworks_opt_carddav" />
   <project path="frameworks/opt/colorpicker" name="CyanogenMod/android_frameworks_opt_colorpicker" />
@@ -308,10 +305,16 @@
   <project path="hardware/cm" name="CyanogenMod/android_hardware_cm" />
   <project path="hardware/invensense" name="CyanogenMod/android_hardware_invensense" groups="invensense" />
   <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" groups="pdk" />
+  <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" groups="pdk" />
+  <project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom" />
+  <project path="hardware/qcom/audio-caf" name="CyanogenMod/android_hardware_qcom_audio-caf" groups="caf" />
   <project path="hardware/qcom/bt" name="CyanogenMod/android_hardware_qcom_bt" groups="qcom" />
   <project path="hardware/qcom/camera" name="CyanogenMod/android_hardware_qcom_camera" groups="qcom" />
-  <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" groups="qcom" />
+  <project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" groups="qcom" />
+  <project path="hardware/qcom/display-caf" name="CyanogenMod/android_hardware_qcom_display-caf" groups="caf" />
   <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" groups="qcom" />
+  <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" />
+  <project path="hardware/qcom/media-caf" name="CyanogenMod/android_hardware_qcom_media-caf" groups="caf" />
   <project path="hardware/qcom/msm8960" name="CyanogenMod/android_hardware_qcom_msm8960" groups="qcom_msm8960" />
   <project path="hardware/qcom/msm8x74" name="CyanogenMod/android_hardware_qcom_msm8x74" groups="qcom_msm8x74" />
   <project path="hardware/qcom/power" name="CyanogenMod/android_hardware_qcom_power" />
@@ -468,20 +471,13 @@
 
 
 
-<!--  <project path="device/htc/saga" name="jdeluyck/android_device_htc_saga" remote="github" revision="cm-11.0" /> -->
-  <project path="device/htc/saga" name="cm102/device_saga" remote="gitorious" revision="cm11" />
-
-  <project path="vendor/htc/saga" name="jdeluyck/proprietary_htc_saga" remote="github" revision="cm-11.0" />
-  <project path="device/htc/msm7x30-common" name="jdeluyck/android_device_htc_msm7x30-common" remote="github" revision="cm-11.0" />
-  <project path="frameworks/base" name="jdeluyck/android_frameworks_base" remote="github" revision="cm-11.0" />
-  <project path="frameworks/native" name="Andromadus/android_frameworks_native" revision="cm-11.0" />
-  <project path="hardware/libhardware_legacy" name="Andromadus/android_hardware_libhardware_legacy" revision="cm-11.0" />
-
-  <project path="hardware/qcom/audio-legacy" name="Andromadus/android_hardware_qcom_audio-caf" revision="cm-11.0" />
+  <project path="device/htc/saga" name="Andromadus/android_device_htc_saga" remote="github" revision="cm-11.0" />
+  <project path="vendor/htc/saga" name="Andromadus/proprietary_htc_saga" remote="github" revision="cm-11.0" />
+  <project path="device/htc/msm7x30-common" name="Andromadus/android_device_htc_msm7x30-common" remote="github" revision="cm-11.0" />
+  <project path="frameworks/base" name="Andromadus/android_frameworks_base" remote="github" revision="cm-11.0" />
   <project path="hardware/qcom/display-legacy" name="Andromadus/android_hardware_qcom_display" remote="github" revision="cm-11.0" />
   <project path="hardware/qcom/media-legacy" name="Andromadus/android_hardware_qcom_media" remote="github" revision="cm-11.0" />
 
-<!--  <project path="kernel/htc/msm7x30-3.0" name="jdeluyck/htc7x30-3.0" remote="github" revision="andromadus_4.4" /> -->
-  <project path="kernel/htc/msm7x30-3.0" name="kylon/htc7x30-3.0" remote="github" revision="andromadus_4.4" />
+  <project path="kernel/htc/msm7x30-3.0" name="Andromadus/htc7x30-3.0" remote="github" revision="andromadus_4.4" />
 
 </manifest>
