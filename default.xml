@@ -477,6 +477,7 @@
   <project path="frameworks/base" name="CyanogenMod/android_frameworks_base" groups="pdk" />
   <project path="hardware/qcom/display-legacy" name="Andromadus/android_hardware_qcom_display" remote="github" revision="cm-11.0" />
   <project path="hardware/qcom/media-legacy" name="Andromadus/android_hardware_qcom_media" remote="github" revision="cm-11.0" />
+  <project path="hardware/qcom/gps" name="Andromadus/android_hardware_qcom_gps" remote="github" revision="cm-11.0" />
 
   <project path="kernel/htc/msm7x30-3.0" name="Andromadus/htc7x30-3.0" remote="github" revision="andromadus_4.4" />
 
