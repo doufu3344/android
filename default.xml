@@ -484,5 +484,4 @@
 
   <project path="kernel/htc/msm7x30-3.0" name="Andromadus/htc7x30-3.0" remote="github" revision="andromadus_4.4" />
 
-  <project path="vendor/qcom/proprietary" name="Mustaavalkosta/android_vendor_qcom_proprietary" revision="cm-11.0" />
 </manifest>
