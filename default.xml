@@ -180,6 +180,7 @@
   <project path="external/libppp" name="CyanogenMod/android_external_libppp" />
   <project path="external/libselinux" name="CyanogenMod/android_external_libselinux" groups="pdk" />
   <project path="external/libsepol" name="CyanogenMod/android_external_libsepol" groups="pdk" />
+  <project path="external/libtar" name="CyanogenMod/android_external_libtar" />
   <project path="external/libusb" name="CyanogenMod/android_external_libusb" />
   <project path="external/libusbx" name="CyanogenMod/android_external_libusbx" />
   <project path="external/libusb-compat" name="CyanogenMod/android_external_libusb-compat" />
@@ -322,6 +323,7 @@
   <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" groups="qcom" />
   <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" groups="qcom" />
   <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" />
+  <project path="hardware/qcom/media-caf" name="CyanogenMod/android_hardware_qcom_media-caf" groups="caf" />
   <project path="hardware/qcom/msm8960" name="CyanogenMod/android_hardware_qcom_msm8960" groups="qcom_msm8960" />
   <project path="hardware/qcom/msm8x74" name="CyanogenMod/android_hardware_qcom_msm8x74" groups="qcom_msm8x74" />
   <project path="hardware/qcom/power" name="CyanogenMod/android_hardware_qcom_power" />
@@ -482,7 +484,6 @@
 
   <project path="device/htc/msm7x30-common" name="jdeluyck/android_device_htc_msm7x30-common" remote="github" revision="cm-11.0" />
   <project path="frameworks/av" name="jdeluyck/android_frameworks_av" groups="pdk" revision="cm-11.0"/>
-  <project path="hardware/qcom/media-caf" name="jdeluyck/android_hardware_qcom_media-caf" groups="caf" />
   <project path="hardware/qcom/media-legacy" name="Andromadus/android_hardware_qcom_media" remote="github" revision="cm-11.0" />
 
   <project path="hardware/qcom/audio-legacy" name="Mustaavalkosta/android_hardware_qcom_audio-legacy" remote="github" revision="cm-11.0" />
