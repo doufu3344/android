@@ -1,7 +1,7 @@
 Getting Started
 ---------------
 
-This is the Android source code of HTC saga (G12).
+This is the Android source code of HTC saga (G12 or HTC Desire S).
 
 To get started, you'll need to get
 familiar with [Git and Repo](http://source.android.com/download/using-repo).
