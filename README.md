@@ -10,4 +10,4 @@ To initialize your local repository using the Andromadus trees, use a command li
 
 Then to sync up:
 
-  repo sync
+    repo sync
